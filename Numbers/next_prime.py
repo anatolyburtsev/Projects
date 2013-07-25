@@ -11,5 +11,5 @@ for i in itertools.count(2):
         print (i)
         print("Do you want more? y/n:")
         answer = input()
-        if answer != "y":
+        if not answer.lower().startswith('y'):
             break
